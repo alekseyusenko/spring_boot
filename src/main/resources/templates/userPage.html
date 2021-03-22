@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User page</title>
+</head>
+<body>
+<th:block>
+    <h3><label th:text="${'Hello, ' + user.username + '!'}"></label></h3>
+    <label th:text="${'Your id is: ' + user.id}"></label>
+    <br>
+    <label th:text="${'Your password is: ' + user.password}"></label>
+    <br>
+    <label th:text="${'List of your roles: ' + user.roleNames}"></label>
+</th:block>
+<br>
+<br>
+<a href="/logout" name="Logout">Logout</a>
+</body>
+</html>
